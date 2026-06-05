@@ -25,8 +25,9 @@ export default function Hero() {
             </h1>
 
             <p className="mt-6 text-lg sm:text-xl text-zinc-400 max-w-2xl mx-auto lg:mx-0">
-              Esta App revoluciona la gestión médica y el seguimiento de pacientes en tiempo real.
-              Diseñada para profesionales de la salud con tecnología de vanguardia.
+              Transformamos la gestión médica y la internación domiciliaria en tiempo real.
+              Una solución con tecnología de vanguardia diseñada para optimizar el trabajo de
+              los profesionales de la salud y agilizar la logística de la medicina prepaga
             </p>
 
             <div className="mt-10 flex flex-col sm:flex-row gap-6 items-center justify-center lg:justify-start">
