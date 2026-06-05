@@ -29,11 +29,17 @@ export default function Hero() {
               Diseñada para profesionales de la salud con tecnología de vanguardia.
             </p>
             
-            <div className="mt-10 flex flex-col sm:flex-row gap-4 justify-center lg:justify-start">
-              <a href="#download" className="inline-flex justify-center items-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-emerald-500 px-8 py-4 text-sm font-semibold text-zinc-950 shadow-lg shadow-cyan-500/20 transition-all duration-300 hover:scale-105 hover:shadow-cyan-500/40">
-                <Download className="w-5 h-5" />
-                Descargar App
-              </a>
+            <div className="mt-10 flex flex-col sm:flex-row gap-6 items-center justify-center lg:justify-start">
+              <div className="relative group">
+                <div className="absolute -inset-1 bg-gradient-to-r from-cyan-500 to-emerald-500 rounded-2xl blur opacity-25 group-hover:opacity-50 transition duration-1000 group-hover:duration-200"></div>
+                <Image 
+                  src="/images/logo_app.png" 
+                  alt="PobaPlus Logo" 
+                  width={64} 
+                  height={64} 
+                  className="relative rounded-2xl shadow-2xl border border-zinc-800"
+                />
+              </div>
               <a href="#case-study" className="inline-flex justify-center items-center gap-2 rounded-xl bg-zinc-900 border border-zinc-800 px-8 py-4 text-sm font-semibold text-zinc-300 backdrop-blur-sm transition-all duration-300 hover:bg-zinc-800 hover:text-white">
                 Ver Caso de Estudio
                 <ArrowRight className="w-5 h-5" />

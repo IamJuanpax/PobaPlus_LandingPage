@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import { Github, Linkedin, Mail } from 'lucide-react';
 
 export default function Footer() {
@@ -20,8 +21,14 @@ export default function Footer() {
             </a>
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
-            <div className="flex items-center justify-center md:justify-start gap-2 mb-2">
-              <span className="flex h-2 w-2 rounded-full bg-cyan-500"></span>
+            <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
+              <Image 
+                src="/images/logo_app.png" 
+                alt="PobaPlus Logo" 
+                width={32} 
+                height={32} 
+                className="rounded-lg"
+              />
               <p className="text-base text-zinc-300 font-semibold">PobaPlus Case Study</p>
             </div>
             <p className="text-center md:text-left text-sm text-zinc-500">
