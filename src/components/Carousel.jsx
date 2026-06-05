@@ -4,7 +4,22 @@ import { useState, useRef, useEffect } from 'react';
 import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
-const images = Array.from({ length: 11 }, (_, i) => `/images/${i + 1}.jpeg`);
+const images = [
+  '/images/1.jpg',
+  '/images/2.jpeg',
+  '/images/3.jpeg',
+  '/images/4.jpeg',
+  '/images/5.jpg',
+  '/images/6.jpeg',
+  '/images/7.jpg',
+  '/images/8.jpeg',
+  '/images/9.jpeg',
+  '/images/10.jpg',
+  '/images/11.jpg',
+  '/images/12.jpeg',
+  '/images/13.jpeg',
+  '/images/14.jpeg',
+];
 
 export default function Carousel() {
   const [currentIndex, setCurrentIndex] = useState(0);

@@ -51,9 +51,9 @@ export default function Hero() {
               {/* Notch */}
               <div className="absolute top-0 inset-x-0 h-6 bg-zinc-800 rounded-b-3xl w-1/2 mx-auto z-20"></div>
               
-              <Image 
-                src="/images/1.jpeg" 
-                alt="PobaPlus App Interface" 
+              <Image
+                src="/images/1.jpg"
+                alt="PobaPlus App Interface"
                 fill
                 className="object-cover z-10"
                 priority
