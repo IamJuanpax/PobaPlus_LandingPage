@@ -1,0 +1,65 @@
+# ESPECIFICACIÓN TÉCNICA: LANDING PAGE DE ALTO IMPACTO (NEXT.JS + TAILWIND)
+
+Actúa como un Diseñador UI/UX y Desarrollador Frontend Senior experto en Next.js (App Router) y Tailwind CSS. El objetivo es construir una Landing Page ultra moderna, optimizada y estética para presentar mi aplicación móvil "PobaPlus" (una app de gestión médica, historias clínicas y logística de turnos desarrollada en React Native y Firebase). 
+
+La página debe servir como portafolio técnico y caso de estudio. No se mostrará el código fuente de la app móvil, sino su arquitectura, funcionamiento y propuesta de valor.
+
+---
+
+## 🎨 LINEAMIENTOS DE DISEÑO (UI/UX)
+* **Estilo:** Dark Mode premium por defecto (fondos tipo `bg-zinc-950` o `bg-slate-950`) con sutiles gradientes de color y efectos de vidrio esmerilado (`backdrop-blur`).
+* **Colores de acento:** Tonos médicos/tecnológicos profesionales (Azul cyan, esmeralda o violeta sutil) para destacar botones de acción (CTAs) y métricas.
+* **Interactividad:** Animaciones suaves de entrada al hacer scroll (puedes usar clases nativas de Tailwind o sugerir Framer Motion si es necesario).
+
+---
+
+## 🗂️ RECURSOS DISPONIBLES EN EL PROYECTO
+El agente debe asumir que los recursos multimedia locales ya están organizados en el directorio `public/` de la siguiente forma:
+* `/images/`: Capturas de pantalla de la UI de la app (Mockups de celular, pantallas de login, flujo de consulta, etc.).
+* `/videos/`: Clips cortos en bucle o demostraciones de interacciones nativas.
+
+---
+
+## 🏗️ ESTRUCTURA Y COMPONENTES DE LA PÁGINA (Sección por Sección)
+
+El archivo `app/page.js` (o sus componentes modulares correspondientes) debe estructurarse de la siguiente manera:
+
+### 1. Hero Section (Primer impacto)
+* **Izquierda:** Título imponente con gradiente de texto, bajada clara que explique qué es la app (ej: "La evolución en la gestión médica y el seguimiento de pacientes en tiempo real") y botones CTA (uno que apunte a la Play Store si aplica, y otro hacia el "Caso de Estudio técnico").
+* **Derecha:** Un mockup flotante o render de un celular que muestre una imagen clave de la aplicación (`/images/hero-mockup.png`).
+
+### 2. Carrusel Interactivo de Pantallas (Showcase de la UI)
+* Un componente de carrusel responsive con Tailwind que permita deslizar horizontalmente las capturas de la carpeta `/images/`.
+* Cada imagen debe simular estar dentro de un frame de celular (iPhone o Android genérico).
+* Debe incluir flechas de navegación y micro-animaciones al pasar el cursor (hover).
+
+### 3. Sección de Video de YouTube (Demostración En Vivo)
+* Un contenedor optimizado y responsive (`aspect-video`) embebiendo un reproductor de YouTube con bordes redondeados y una sombra difuminada para mostrar el video promocional o la demo de la app en funcionamiento.
+
+### 4. Arquitectura y Stack Tecnológico (La sección para Reclutadores)
+* Una grilla de tarjetas interactiva que desglose el ecosistema técnico que se utilizó para construir la aplicación real:
+  - **Mobile:** React Native + Expo (Compilación EAS, optimización de bundles `.aab`).
+  - **Backend & Auth:** Firebase Firestore (Base de datos en tiempo real, reglas de seguridad por roles) + Firebase Storage (Almacenamiento de adjuntos/imágenes).
+  - **Features Core:** Geolocalización nativa, validación de distancias geográficas de 400 metros para control de asistencia, y generación dinámica de PDFs en tiempo de consulta.
+
+### 5. Desafíos Técnicos y Resoluciones (Demostración de Seniority)
+* Un bloque tipo "Caso de Estudio" que explique textualmente los mayores retos de ingeniería de la app:
+  - *Reto:* Garantizar la presencia del profesional en el lugar sin comprometer el rendimiento de la batería. *Solución:* Implementación de geofencing optimizado y restricciones de distancia por Firestore.
+  - *Reto:* Generación limpia de reportes médicos exportables. *Solución:* Uso de plantillas HTML compiladas a PDF de forma nativa desde el dispositivo.
+
+### 6. Sección de Preguntas Frecuentes (FAQ / Acordeón)
+* Un sistema de acordeones interactivos desarrollados con estados locales de React (`useState`) para responder dudas comunes sobre el proyecto:
+  - ¿Cómo se maneja la privacidad de los datos médicos?
+  - ¿La aplicación está optimizada para tablets y celulares de baja gama?
+  - ¿Cómo funciona el sistema de roles entre Administradores y Profesionales?
+
+### 7. Footer Profesional
+* Enlaces limpios a mi perfil de GitHub, LinkedIn y un botón de contacto por mail.
+
+---
+
+## 🚀 INSTRUCCIONES PARA EL AGENTE DE GEMINI CLI:
+1. Generá la estructura de archivos dentro del framework de **Next.js (App Router)**.
+2. Escribí los componentes utilizando **Tailwind CSS** limpio, semántico y responsive (móvil primero).
+3. Utilizá componentes de React funcionales y añade `"use client"` únicamente en las secciones que requieran interactividad nativa (como el carrusel, el acordeón de FAQs o animaciones).
+4. No inventes código de la app móvil, enfócate en el diseño de la web y la exposición de las características detalladas anteriormente.
