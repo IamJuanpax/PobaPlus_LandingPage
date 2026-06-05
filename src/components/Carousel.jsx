@@ -6,7 +6,7 @@ import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
   '/images/1.jpg',
-  '/images/2.jpeg',
+  '/images/2.jfif',
   '/images/3.jpeg',
   '/images/4.jpeg',
   '/images/5.jpg',
@@ -59,7 +59,7 @@ export default function Carousel() {
     const handleScroll = () => {
       const scrollLeft = container.scrollLeft;
       const centerPosition = scrollLeft + container.offsetWidth / 2;
-      
+
       let closestIndex = 0;
       let minDistance = Infinity;
 
@@ -101,9 +101,9 @@ export default function Carousel() {
       </div>
 
       <div className="relative max-w-[100vw] -mx-4 sm:mx-auto sm:max-w-7xl">
-        
+
         {/* Navigation Buttons */}
-        <button 
+        <button
           onClick={prev}
           className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 bg-zinc-900/80 backdrop-blur border border-zinc-700 text-zinc-300 p-3 rounded-full hover:bg-zinc-800 hover:text-white transition-all shadow-xl hidden md:block"
           aria-label="Anterior"
@@ -111,7 +111,7 @@ export default function Carousel() {
           <ChevronLeft className="w-6 h-6" />
         </button>
 
-        <button 
+        <button
           onClick={next}
           className="absolute right-4 sm:right-8 top-1/2 -translate-y-1/2 z-20 bg-zinc-900/80 backdrop-blur border border-zinc-700 text-zinc-300 p-3 rounded-full hover:bg-zinc-800 hover:text-white transition-all shadow-xl hidden md:block"
           aria-label="Siguiente"
@@ -124,7 +124,7 @@ export default function Carousel() {
         <div className="absolute right-0 top-0 bottom-0 w-8 sm:w-32 bg-gradient-to-l from-zinc-950 to-transparent z-10 pointer-events-none"></div>
 
         {/* Scroll Container */}
-        <div 
+        <div
           ref={scrollContainerRef}
           className="flex overflow-x-auto snap-x snap-mandatory hide-scrollbar gap-6 px-[10vw] sm:px-[20vw] lg:px-[30vw] py-8"
           style={{ scrollbarWidth: 'none', msOverflowStyle: 'none' }}
@@ -132,11 +132,10 @@ export default function Carousel() {
           {images.map((src, index) => {
             const isActive = index === currentIndex;
             return (
-              <div 
+              <div
                 key={index}
-                className={`shrink-0 snap-center transition-all duration-500 ease-out cursor-pointer ${
-                  isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-40 hover:opacity-60'
-                }`}
+                className={`shrink-0 snap-center transition-all duration-500 ease-out cursor-pointer ${isActive ? 'scale-100 opacity-100' : 'scale-90 opacity-40 hover:opacity-60'
+                  }`}
                 onClick={() => scrollTo(index)}
               >
                 {/* Phone Frame */}
@@ -150,7 +149,7 @@ export default function Carousel() {
                     sizes="(max-width: 768px) 260px, 280px"
                   />
                   {isActive && (
-                     <div className="absolute inset-0 ring-2 ring-cyan-500/50 rounded-[1.7rem] pointer-events-none z-30"></div>
+                    <div className="absolute inset-0 ring-2 ring-cyan-500/50 rounded-[1.7rem] pointer-events-none z-30"></div>
                   )}
                 </div>
               </div>
@@ -164,17 +163,17 @@ export default function Carousel() {
             <button
               key={index}
               onClick={() => scrollTo(index)}
-              className={`h-2 rounded-full transition-all duration-300 ${
-                index === currentIndex ? 'w-6 bg-cyan-400' : 'w-2 bg-zinc-700 hover:bg-zinc-500'
-              }`}
+              className={`h-2 rounded-full transition-all duration-300 ${index === currentIndex ? 'w-6 bg-cyan-400' : 'w-2 bg-zinc-700 hover:bg-zinc-500'
+                }`}
               aria-label={`Ir a imagen ${index + 1}`}
             />
           ))}
         </div>
       </div>
-      
+
       {/* Global styles to hide scrollbar for webkit */}
-      <style dangerouslySetInnerHTML={{__html: `
+      <style dangerouslySetInnerHTML={{
+        __html: `
         .hide-scrollbar::-webkit-scrollbar {
           display: none;
         }
