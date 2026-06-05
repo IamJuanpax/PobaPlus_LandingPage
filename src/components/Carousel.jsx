@@ -5,7 +5,7 @@ import Image from 'next/image';
 import { ChevronLeft, ChevronRight } from 'lucide-react';
 
 const images = [
-  '/images/1.jpg',
+  '/images/1.jpeg',
   '/images/2.jfif',
   '/images/3.jpeg',
   '/images/4.jpeg',
