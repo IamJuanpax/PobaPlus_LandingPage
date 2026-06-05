@@ -1,6 +1,12 @@
 export default function YoutubeEmbed() {
-  // Placeholder video ID, you can change this to the real one.
-  const videoId = "dQw4w9WgXcQ";
+  const getYouTubeID = (url) => {
+    if (!url) return "dQw4w9WgXcQ"; // Fallback placeholder
+    const regExp = /^.*(youtu.be\/|v\/|u\/\w\/|embed\/|watch\?v=|\&v=)([^#\&\?]*).*/;
+    const match = url.match(regExp);
+    return (match && match[2].length === 11) ? match[2] : "dQw4w9WgXcQ";
+  };
+
+  const videoId = getYouTubeID(process.env.NEXT_PUBLIC_YOUTUBE_URL);
 
   return (
     <section className="scroll-mt-24">
