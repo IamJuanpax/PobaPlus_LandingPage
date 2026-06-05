@@ -143,7 +143,7 @@ export default function Carousel() {
                   <div className="absolute top-0 inset-x-0 h-5 bg-zinc-800 rounded-b-2xl w-1/2 mx-auto z-20"></div>
                   <Image
                     src={src}
-                    alt={`PobaPlus UI Screen ${index + 1}`}
+                    alt={`App UI Screen ${index + 1}`}
                     fill
                     className="object-cover"
                     sizes="(max-width: 768px) 260px, 280px"

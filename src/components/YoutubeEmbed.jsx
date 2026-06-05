@@ -1,6 +1,6 @@
 export default function YoutubeEmbed() {
   // Placeholder video ID, you can change this to the real one.
-  const videoId = "dQw4w9WgXcQ"; 
+  const videoId = "dQw4w9WgXcQ";
 
   return (
     <section className="scroll-mt-24">
@@ -17,7 +17,7 @@ export default function YoutubeEmbed() {
         <div className="relative aspect-video rounded-2xl overflow-hidden bg-zinc-950">
           <iframe
             src={`https://www.youtube.com/embed/${videoId}?autoplay=0&rel=0&modestbranding=1`}
-            title="PobaPlus App Demo"
+            title="App Demo"
             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
             allowFullScreen
             className="absolute top-0 left-0 w-full h-full border-0"

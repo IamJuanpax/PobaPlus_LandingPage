@@ -1,6 +1,6 @@
-# PobaPlus - Landing Page & Case Study
+# Mobile Health Application - Landing Page & Case Study
 
-Este proyecto es una Landing Page de alto impacto diseñada con **Next.js** y **Tailwind CSS**. Su objetivo principal es servir como portafolio técnico y caso de estudio para la aplicación móvil **PobaPlus**, una solución avanzada para la gestión médica, historias clínicas y logística de turnos.
+Este proyecto es una Landing Page de alto impacto diseñada con **Next.js** y **Tailwind CSS**. Su objetivo principal es servir como portafolio técnico y caso de estudio para una aplicación móvil, una solución avanzada para la gestión médica, historias clínicas y logística de turnos.
 
 ---
 
@@ -65,7 +65,7 @@ npm run start
 
 ---
 
-## 📱 Sobre la App PobaPlus (Resumen Técnico)
+## 📱 Sobre la App (Resumen Técnico)
 Aunque esta web es el portafolio, la aplicación móvil real utiliza:
 - **Frontend:** React Native + Expo.
 - **Backend:** Firebase Firestore & Storage.

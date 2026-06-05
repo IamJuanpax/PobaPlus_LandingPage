@@ -1,6 +1,6 @@
 # ESPECIFICACIÓN TÉCNICA: LANDING PAGE DE ALTO IMPACTO (NEXT.JS + TAILWIND)
 
-Actúa como un Diseñador UI/UX y Desarrollador Frontend Senior experto en Next.js (App Router) y Tailwind CSS. El objetivo es construir una Landing Page ultra moderna, optimizada y estética para presentar mi aplicación móvil "PobaPlus" (una app de gestión médica, historias clínicas y logística de turnos desarrollada en React Native y Firebase). 
+Actúa como un Diseñador UI/UX y Desarrollador Frontend Senior experto en Next.js (App Router) y Tailwind CSS. El objetivo es construir una Landing Page ultra moderna, optimizada y estética para presentar mi aplicación móvil (una app de gestión médica, historias clínicas y logística de turnos desarrollada en React Native y Firebase). 
 
 La página debe servir como portafolio técnico y caso de estudio. No se mostrará el código fuente de la app móvil, sino su arquitectura, funcionamiento y propuesta de valor.
 

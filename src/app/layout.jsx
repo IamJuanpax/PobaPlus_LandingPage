@@ -1,7 +1,7 @@
 import './globals.css'
 
 export const metadata = {
-  title: 'PobaPlus | Gestión Médica',
+  title: 'Mobile Health Application | Gestión Médica',
   description: 'La evolución en la gestión médica y el seguimiento de pacientes en tiempo real',
 }
 

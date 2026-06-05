@@ -22,14 +22,14 @@ export default function Footer() {
           </div>
           <div className="mt-8 md:mt-0 md:order-1">
             <div className="flex items-center justify-center md:justify-start gap-3 mb-2">
-              <Image 
-                src="/images/logo_app.png" 
-                alt="PobaPlus Logo" 
-                width={32} 
-                height={32} 
+              <Image
+                src="/images/logo_app.png"
+                alt="Logo"
+                width={32}
+                height={32}
                 className="rounded-lg"
               />
-              <p className="text-base text-zinc-300 font-semibold">PobaPlus Case Study</p>
+              <p className="text-base text-zinc-300 font-semibold">App Case Study</p>
             </div>
             <p className="text-center md:text-left text-sm text-zinc-500">
               &copy; {new Date().getFullYear()} Creado para demostración técnica. Todos los derechos reservados.
